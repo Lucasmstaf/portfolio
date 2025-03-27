@@ -1,0 +1,44 @@
+.cabecalho {
+    background: var(--cor-fundo-transparente);
+    padding: var(--espacamento-grande) 15%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px var(--cor-sombra);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: var(--espacamento-grande);
+    justify-content: center;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    transition: var(--transicao-padrao);
+    position: relative;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover);
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: var(--espacamento-grande) 5%;
+    }
+
+    .cabecalho__menu {
+        gap: var(--espacamento-medio);
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+} 

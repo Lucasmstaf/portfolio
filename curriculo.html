@@ -2,49 +2,63 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Currículo | Lucas Mustafa</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
         </nav>
     </header>
+
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
-            <p class="apresentacao__conteudo__texto">
-                Olá, a seguir todas as minhas habilidades e meus certificados.
-            </p>
-            <h2 class="apresentacao__conteudo__titulo">Habilidades</h2>
-            <p class="apresentacao__conteudo__texto">
-            <ul class="apresentacao__conteudo__texto">
-                <li> Habilidades Técnicas: HTML, CSS, Javascript, C# e Python.</li>
-                <li> Habilidades Comportamentais: Proatividade, Resolução de Problemas e Adaptabilidade.</li>
-            </ul>
-            </p>
+            <div class="apresentacao__conteudo__texto">
+                <p>Olá! Sou Lucas Mustafa, um desenvolvedor .NET apaixonado por criar experiências digitais excepcionais. 
+                Com experiência em desenvolvimento web moderno, foco em performance, acessibilidade e experiência do usuário.</p>
+            </div>
+            <h2 class="apresentacao__conteudo__titulo">Experiências</h2>
+            <div class="apresentacao__conteudo__texto">
+                <ul>
+                    <li>Promotor de eventos na Empresa MultiPlan (2023 - 2025)</li>
+                </ul>
+            </div>
             <h2 class="apresentacao__conteudo__titulo">Estudos</h2>
             <div class="apresentacao__conteudo__texto">
-            <ul class="apresentacao__conteudo__texto">
-                <li>Curso HTML e CSS - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/degree-html-css-v527396-527396/certificate">com certificado</a></li>
-                <li>Curso Iniciante em Programação - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/degree-programacao-662273/certificate">com certificado</a></li>
-                <li>Curso Aprenda a Programar em C# - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/degree-c-sharp-orientacao-objetos-596248/certificate">com certificado</a> </li>
-                <li>Curso de Linux - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/course/linux-onboarding-utilizar-cli-forma-rapida-pratica/certificate">com certificado</a></li>
-                <li>Curso Git e Github - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/course/git-github-dominando-controle-versao-codigo/certificate">com certificado</a></li>
-                <li>Curso de Javascript - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/course/logica-programacao-mergulhe-programacao-javascript/certificate">com certificado</a></li>
-                <li>Imersao Dev com Google Gemini - Alura <a href="https://cursos.alura.com.br/user/lucasmustafa/immersion/certificate/43728">com certificado</a></li>
-            </ul>
-            </div>    
+                <ul>
+                    <li>Bacharelando em Engenharia de Software - UniCesumar (2025 - 2029)</li>
+                    <li>Desenvolvimento Web - Alura Cursos (2024 - Presente)</li>
+                </ul>
+            </div>
+            <h2 class="apresentacao__conteudo__titulo">Certificações</h2>
+            <div class="apresentacao__conteudo__texto">
+                <ul>
+                    <li>Certificação em Desenvolvimento Web - Alura</li>
+                    <li>Certificação em Desenvolvimento .NET - Udemy</li>
+                    <li>Certificação em Git e GitHub - Linkedin Learning</li>
+                </ul>
+            </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/imagem2.jpeg" alt="Foto do Lucas Mustafa">
-    </main> 
+        <img class="apresentacao__imagem" src="./assets/chave2.0.JPG" alt="Foto de Lucas Mustafa">
+    </main>
+
     <footer class="rodape">
-        <p>Desenvolvido por Lucas Mustafa.</p>
+        <div class="rodape__conteudo">
+            <p class="rodape__texto">Desenvolvido por Lucas Mustafa © 2025</p>
+        </div>
     </footer>
+
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <img src="./assets/theme.svg" alt="Ícone de tema">
+    </button>
+
+    <script src="./script/app.js"></script>
 </body>
 </html>

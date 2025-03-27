@@ -1,0 +1,35 @@
+.rodape {
+    padding: var(--espacamento-grande) 15%;
+    color: var(--cor-primaria);
+    background: var(--gradiente-secundario);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.3rem;
+    margin-top: auto;
+    letter-spacing: 0.5px;
+}
+
+.rodape__conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape__texto {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .rodape {
+        padding: var(--espacamento-grande) 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rodape {
+        padding: var(--espacamento-grande) 3%;
+        font-size: 1rem;
+    }
+} 

@@ -2,41 +2,60 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <title>Lucas Mustafa | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
         </nav>
     </header>
+
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Lucas Mustafa, desenvolvedor Back-end iniciante com foco em C#. Atualmente estou cursando Bacharelado em 
-            Engenharia de Software na UniCesumar 2025-2029.</p>
+            <h1 class="apresentacao__conteudo__titulo">
+                Olá, eu sou <strong class="titulo-destaque">Lucas Mustafa</strong>
+            </h1>
+            <p class="apresentacao__conteudo__texto">
+                Desenvolvedor Full Stack apaixonado por criar experiências digitais excepcionais. 
+                Especializado em desenvolvimento web moderno, com foco em performance, 
+                acessibilidade e experiência do usuário.
+            </p>
             <div class="apresentacao__links">
-                <h2 class="apresentacao__link__subtitulo">Acesse as minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://github.com/Lucasmstaf">Github
-                    <img src="./assets/githubgreen.png" alt="Icone do Github">
+                <h2 class="apresentacao__link__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/luskaa">
+                    <img src="./assets/githubgreen.png" alt="Ícone do GitHub">
+                    GitHub
                 </a>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/lucas-mustafa-59b6422b0/">Linkedin
-                    <img src="./assets/linkedingreen.png" alt="Icone do Linkedin">
+                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/lucas-mustafa">
+                    <img src="./assets/linkedingreen.png" alt="Ícone do LinkedIn">
+                    LinkedIn
                 </a>
-                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/lucasmstaf/">Instagram
-                    <img src="./assets/instagramgreen.png" alt="Icone do Instagram">
+                <a class="apresentacao__links__navegacao" href="https://instagram.com/lucas.mustafa">
+                    <img src="./assets/instagramgreen.png" alt="Ícone do Instagram">
+                    Instagram
                 </a>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/chave2.0.JPG" alt="Foto do Lucas Mustafa">
+        <img class="apresentacao__imagem" src="./assets/chave2.0.JPG" alt="Foto de Lucas Mustafa">
     </main>
+
     <footer class="rodape">
-        <p>Desenvolvido por Lucas Mustafa.</p>
+        <div class="rodape__conteudo">
+            <p class="rodape__texto">Desenvolvido por Lucas Mustafa © 2025</p>
+        </div>
     </footer>
+
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <img src="./assets/theme.svg" alt="Ícone de tema">
+    </button>
+
+    <script src="./script/app.js"></script>
 </body>
 </html>

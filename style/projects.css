@@ -1,0 +1,29 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-grande);
+    margin-top: var(--espacamento-grande);
+}
+
+.projeto {
+    background: var(--cor-fundo);
+    padding: var(--espacamento-grande);
+    border-radius: var(--borda-radius);
+    box-shadow: 0 4px 6px var(--cor-sombra);
+}
+
+.projeto:hover {
+    box-shadow: 0 6px 12px var(--cor-sombra-hover);
+}
+
+.projeto__links {
+    display: flex;
+    gap: var(--espacamento-medio);
+    margin-top: var(--espacamento-medio);
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        padding: var(--espacamento-medio);
+    }
+} 

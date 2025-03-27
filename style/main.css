@@ -1,0 +1,108 @@
+.apresentacao {
+    padding: calc(var(--espacamento-grande) * 2) 15% var(--espacamento-grande);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--espacamento-grande);
+}
+
+.apresentacao__conteudo {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento-medio);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.4rem;
+    font-family: var(--font-primaria);
+    line-height: 1.2;
+    position: relative;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.titulo-destaque {
+    color: var(--cor-hover);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.1rem;
+    font-family: var(--font-secundaria);
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: var(--espacamento-medio);
+}
+
+.apresentacao__conteudo__texto p {
+    margin-bottom: var(--espacamento-medio);
+}
+
+.apresentacao__conteudo__texto ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.apresentacao__conteudo__texto li {
+    margin-bottom: var(--espacamento-pequeno);
+}
+
+.apresentacao__conteudo__texto a {
+    color: var(--cor-hover);
+    text-decoration: none;
+}
+
+.apresentacao__conteudo__texto a:hover {
+    text-decoration: underline;
+}
+
+.apresentacao__imagem {
+    width: 30%;
+    border-radius: var(--borda-radius);
+    box-shadow: 0 4px 20px var(--cor-sombra);
+}
+
+.apresentacao__imagem:hover {
+    box-shadow: 0 6px 30px var(--cor-sombra-hover);
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        padding: calc(var(--espacamento-grande) * 2) 10% var(--espacamento-grande);
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        padding: calc(var(--espacamento-grande) * 2) 5% var(--espacamento-grande);
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem;
+    }
+
+    .apresentacao__imagem {
+        width: 50%;
+        margin-bottom: var(--espacamento-grande);
+    }
+}
+
+@media (max-width: 480px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+    }
+} 

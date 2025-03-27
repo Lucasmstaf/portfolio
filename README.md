@@ -60,7 +60,7 @@ O CSS está organizado em módulos para melhor manutenção:
 
 1. Clone o repositório
 2. Abra o arquivo `index.html` no seu navegador
-3. Ou faça deploy em qualquer servidor web
+3. Ou utilize o link disponível na descrição do repositório
 
 ## 👤 Autor
 

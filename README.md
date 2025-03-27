@@ -13,9 +13,17 @@ Um portfólio profissional moderno e responsivo desenvolvido com HTML, CSS e Jav
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
+<<<<<<< HEAD
 - CSS3 (com organização modular)
 - JavaScript Vanilla
 - Google Fonts (Inter e Cormorant Garamond)
+=======
+- CSS3 (com variáveis CSS e Flexbox)
+- JavaScript
+- Fontes do Google Fonts
+  - Cormorant Garamond
+  - Inter
+>>>>>>> af6f7b03da3d11007116cb318248864096e0b1df
 
 ## 📁 Estrutura do Projeto
 
@@ -35,6 +43,7 @@ portfolio/
 └── README.md
 ```
 
+<<<<<<< HEAD
 ## 🔧 Personalização
 
 Para personalizar o portfólio:
@@ -75,3 +84,8 @@ O CSS está organizado em módulos para melhor manutenção:
 ## 👤 Autor
 
 Lucas Mustafa
+=======
+## 📞 Contato
+
+Lucas Mustafa - [LinkedIn](https://www.linkedin.com/in/lucas-mustafa-59b6422b0/)
+>>>>>>> af6f7b03da3d11007116cb318248864096e0b1df

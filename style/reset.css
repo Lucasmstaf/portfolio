@@ -1,0 +1,71 @@
+/* Reset CSS - Normalização de estilos entre navegadores
+   v1.0 | Otimizado para projetos modernos
+*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e elementos de texto */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+               Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+/* Elementos de mídia */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links e interatividade */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:focus {
+  outline: 0;
+}
+
+/* Formulários */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Elementos semânticos */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* Listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

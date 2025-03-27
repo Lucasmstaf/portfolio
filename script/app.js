@@ -1,69 +1,47 @@
 // Gerenciamento de Animações
 document.addEventListener('DOMContentLoaded', () => {
+    // Função reutilizável para adicionar efeitos de hover
+    function adicionarEfeitoHover(elemento, tipo = 'elevacao', valor = -2) {
+        elemento.style.transition = 'all 0.3s ease';
+        
+        elemento.addEventListener('mouseenter', () => {
+            elemento.style.transform = tipo === 'elevacao' 
+                ? `translateY(${valor}px)` 
+                : `scale(${valor})`;
+        });
+
+        elemento.addEventListener('mouseleave', () => {
+            elemento.style.transform = tipo === 'elevacao' 
+                ? 'translateY(0)' 
+                : 'scale(1)';
+        });
+    }
+
     // Animações dos Links de Navegação
-    const linksNavegacao = document.querySelectorAll('.apresentacao__links__navegacao');
-    
-    linksNavegacao.forEach(link => {
-        // Efeito de elevação no hover
-        link.addEventListener('mouseenter', () => {
-            link.style.transform = 'translateY(-2px)';
-            link.style.transition = 'all 0.3s ease';
-        });
-
-        link.addEventListener('mouseleave', () => {
-            link.style.transform = 'translateY(0)';
-        });
-
-        // Efeito de escala no ícone
+    document.querySelectorAll('.apresentacao__links__navegacao').forEach(link => {
+        adicionarEfeitoHover(link);
+        
         const icone = link.querySelector('img');
         if (icone) {
-            link.addEventListener('mouseenter', () => {
-                icone.style.transform = 'scale(1.1)';
-                icone.style.transition = 'all 0.3s ease';
-            });
-
-            link.addEventListener('mouseleave', () => {
-                icone.style.transform = 'scale(1)';
-            });
+            adicionarEfeitoHover(icone, 'escala', 1.1);
         }
     });
 
     // Animações da Imagem de Perfil
     const imagemPerfil = document.querySelector('.apresentacao__imagem');
     if (imagemPerfil) {
-        imagemPerfil.addEventListener('mouseenter', () => {
-            imagemPerfil.style.transform = 'scale(1.02)';
-            imagemPerfil.style.transition = 'all 0.5s ease';
-        });
-
-        imagemPerfil.addEventListener('mouseleave', () => {
-            imagemPerfil.style.transform = 'scale(1)';
-        });
+        imagemPerfil.style.transition = 'all 0.5s ease';
+        adicionarEfeitoHover(imagemPerfil, 'escala', 1.02);
     }
 
     // Animações dos Projetos
-    const projetos = document.querySelectorAll('.projeto');
-    projetos.forEach(projeto => {
-        projeto.addEventListener('mouseenter', () => {
-            projeto.style.transform = 'translateY(-5px)';
-            projeto.style.transition = 'all 0.3s ease';
-        });
-
-        projeto.addEventListener('mouseleave', () => {
-            projeto.style.transform = 'translateY(0)';
-        });
+    document.querySelectorAll('.projeto').forEach(projeto => {
+        adicionarEfeitoHover(projeto, 'elevacao', -5);
     });
 
     // Animações do Botão de Tema
-    const botaoTema = document.querySelector('.theme-toggle');
+    const botaoTema = document.querySelector('#botao-tema');
     if (botaoTema) {
-        botaoTema.addEventListener('mouseenter', () => {
-            botaoTema.style.transform = 'scale(1.1)';
-            botaoTema.style.transition = 'all 0.3s ease';
-        });
-
-        botaoTema.addEventListener('mouseleave', () => {
-            botaoTema.style.transform = 'scale(1)';
-        });
+        adicionarEfeitoHover(botaoTema, 'escala', 1.1);
     }
 }); 

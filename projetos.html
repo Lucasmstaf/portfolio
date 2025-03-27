@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Lucas Mustafa</title>
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre</a>
             <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
@@ -31,17 +32,17 @@
                         Inclui temas claro/escuro, design responsivo e otimização de performance.
                     </p>
                     <div class="projeto__links">
-                        <a class="apresentacao__links__navegacao" href="https://github.com/luskaa/portfolio">
+                        <a class="apresentacao__links__navegacao" href="https://github.com/Lucasmstaf/portfolio">
                             <img src="./assets/githubgreen.png" alt="Ícone do GitHub">
                             Ver no GitHub
                         </a>
                     </div>
                 </div>
                 <div class="projeto">
-                    <h2 class="apresentacao__conteudo__titulo">Sistema de Gerenciamento</h2>
+                    <h2 class="apresentacao__conteudo__titulo">Sistema de Cadastro de Bandas</h2>
                     <p class="apresentacao__conteudo__texto">
-                        Aplicação web para gerenciamento de tarefas e projetos, desenvolvida com React e Node.js.
-                        Inclui autenticação de usuários, CRUD completo e interface intuitiva.
+                        Aplicação back-end para gerenciamento de cadastro, desenvolvida com C#.
+                        Inclui cadastro de bandas, músicas e avaliações.
                     </p>
                     <div class="projeto__links">
                         <a class="apresentacao__links__navegacao" href="https://github.com/luskaa/gerenciador">
@@ -57,15 +58,38 @@
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <p class="rodape__texto">Desenvolvido por Lucas Mustafa © 2025</p>
+            <div class="rodape__contato">
+                <div class="rodape__contato-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
+                </div>
+                <div class="rodape__contato-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+5521987752897">(21) 98775-2897</a>
+                </div>
+            </div>
+            
+            <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
+                <i class="fas fa-file-alt"></i>
+                Ver Currículo
+            </a>
+
+            <div class="rodape__social">
+                <a href="https://github.com/Lucasmstaf" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lucasgmustafa/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/lucasmstaf/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <p class="rodape__copyright">© 2025 Lucas Mustafa. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <button class="theme-toggle" aria-label="Alternar tema">
-        <img src="./assets/theme.png" alt="Ícone de tema">
-    </button>
-
-    <script src="script/app.js"></script>
-    <script src="script/theme.js"></script>
+    <script src="./script/app.js"></script>
 </body>
 </html> 

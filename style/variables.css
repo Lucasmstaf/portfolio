@@ -1,38 +1,30 @@
-/* Cores principais */
+/* Variáveis Globais */
 :root {
-    --cor-primaria: #f8f9fa;
-    --cor-secundaria: #2b2d42;
-    --cor-terciaria: #8d99ae;
-    --cor-hover: #ef233c;
-    
-    /* Cores de fundo e texto */
-    --cor-fundo: #f8f9fa;
-    --cor-texto: #2b2d42;
-    
-    /* Cores de sombra e transparência */
-    --cor-sombra: rgba(43, 45, 66, 0.1);
-    --cor-sombra-hover: rgba(43, 45, 66, 0.2);
-    --cor-fundo-transparente: rgba(248, 249, 250, 0.95);
-    
+    /* Tipografia */
+    --font-primaria: 'Cormorant Garamond', serif;
+    --font-secundaria: 'Inter', sans-serif;
+
+    /* Cores */
+    --cor-primaria: #1a1a1a;
+    --cor-secundaria: #4d4d4d;
+    --cor-destaque: #ff4d4d;
+    --cor-hover: #4d9eff;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+    --cor-sombra-hover: rgba(0, 0, 0, 0.2);
+
     /* Gradientes */
-    --gradiente-primario: linear-gradient(135deg, #ef233c 0%, #d90429 100%);
-    --gradiente-secundario: linear-gradient(135deg, #8d99ae 0%, #2b2d42 100%);
-    
-    /* Fontes */
-    --font-primaria: "Cormorant Garamond", serif;
-    --font-secundaria: "Inter", sans-serif;
-    
+    --gradiente-primario: linear-gradient(90deg, #4d9eff 0%, #2b5876 100%);
+    --gradiente-secundario: linear-gradient(90deg, #f5f5f5 0%, #e0e0e0 100%);
+
+    /* Bordas */
+    --borda-radius: 8px;
+
     /* Espaçamentos */
-    --espacamento-pequeno: 0.5rem;
-    --espacamento-medio: 1rem;
-    --espacamento-grande: 1.5rem;
-    --espacamento-extra-grande: 2rem;
-    
+    --espacamento-pequeno: 8px;
+    --espacamento-medio: 16px;
+    --espacamento-grande: 24px;
+
     /* Transições */
     --transicao-padrao: all 0.3s ease;
     --transicao-lenta: all 0.5s ease;
-    
-    /* Bordas */
-    --borda-padrao: 2px solid var(--cor-terciaria);
-    --borda-radius: 12px;
 } 

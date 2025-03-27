@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | Lucas Mustafa</title>
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre</a>
             <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
@@ -21,13 +22,13 @@
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Sobre Mim</h1>
             <p class="apresentacao__conteudo__texto">
-                Sou um desenvolvedor Full Stack apaixonado por tecnologia e inovação. 
+                Sou um desenvolvedor .NET apaixonado por tecnologia e inovação. 
                 Minha jornada na programação começou com o desenvolvimento web, e desde então 
                 venho me dedicando a criar soluções digitais que fazem a diferença.
             </p>
             <p class="apresentacao__conteudo__texto">
-                Atualmente, estou focado em desenvolvimento web moderno, utilizando tecnologias 
-                como React, Node.js e Python. Meu objetivo é criar aplicações que não apenas 
+                Atualmente, estou focado em desenvolvimento .NET , utilizando tecnologias 
+                como C#. Meu objetivo é criar aplicações que não apenas 
                 funcionem bem, mas também proporcionem uma experiência excepcional para os usuários.
             </p>
             <p class="apresentacao__conteudo__texto">
@@ -35,20 +36,43 @@
                 buscando aprender e me atualizar com as últimas tendências do mercado.
             </p>
         </section>
-        <img class="apresentacao__imagem" src="./assets/chave2.0.JPG" alt="Foto de Lucas Mustafa">
+        <img class="apresentacao__imagem" src="./assets/imagem2.jpeg" alt="Foto de Lucas Mustafa">
     </main>
 
     <footer class="rodape">
         <div class="rodape__conteudo">
-            <p class="rodape__texto">Desenvolvido por Lucas Mustafa © 2025</p>
+            <div class="rodape__contato">
+                <div class="rodape__contato-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:lucasgmustafa@hotmail.com">lucasgmustafa@hotmail.com</a>
+                </div>
+                <div class="rodape__contato-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+5521987752897">(21) 98775-2897</a>
+                </div>
+            </div>
+            
+            <a href="assets/Curriculo.pdf" class="rodape__curriculo" target="_blank">
+                <i class="fas fa-file-alt"></i>
+                Ver Currículo
+            </a>
+
+            <div class="rodape__social">
+                <a href="https://github.com/Lucasmstaf" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lucasgmustafa/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/lucasmstaf/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <p class="rodape__copyright">© 2025 Lucas Mustafa. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <button class="theme-toggle" aria-label="Alternar tema">
-        <img src="./assets/theme.png" alt="Ícone de tema">
-    </button>
-
-    <script src="script/app.js"></script>
-    <script src="script/theme.js"></script>
+    <script src="./script/app.js"></script>
 </body>
 </html> 
